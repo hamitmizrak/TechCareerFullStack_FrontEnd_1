@@ -7,6 +7,12 @@ Project Name: Blog Page
 */
 
 /* ##################################################### */
+/* ### ROOT ###*/
+/* :root{
+    --template_bg:
+} */
+
+/* ##################################################### */
 /* ### COMMON PROPERTY ###*/
 * {
     margin: 0;
@@ -15,7 +21,7 @@ Project Name: Blog Page
 }
 
 html {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 body {
@@ -43,7 +49,7 @@ p {
 }
 
 i{
-    font-size: 4rem;
+    font-size: 2rem;
     color:rgba(162, 7, 252, 0.5);
 }
 
@@ -65,4 +71,47 @@ img:hover{
     content:"";
     display: block;
     clear:both;
+}
+
+/* ##################################################### */
+/* ### LINE CLAMP ###*/
+.line-clamp4{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; 
+}
+
+.line-clamp6{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; 
+}
+
+.line-clamp8{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical; 
+}
+
+.line-clamp10{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical; 
+}
+
+
+/* ##################################################### */
+/* ### NAVBAR FIRST ###*/
+#navbar_first{
+    background-color: black;
+    color:white;
+    max-height: 3rem;
+}
+
+#navbar_first ul li{
+    display: inline-block;
 }
