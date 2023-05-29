@@ -1,0 +1,68 @@
+/*
+Project Name: Blog Page
+-Name: SPA
+-Author: Hamit Mızrak
+-Version: v.1
+-Description: This is project blog Business, my project
+*/
+
+/* ##################################################### */
+/* ### COMMON PROPERTY ###*/
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    line-height: 1.7;
+    font-size: 2rem;
+    /*10*2=20px*/
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    margin:0 2rem;
+    text-align: justify;
+    font-size: 1.5rem!important;
+    opacity: .9;
+    font-weight:400;
+}
+
+i{
+    font-size: 4rem;
+    color:rgba(162, 7, 252, 0.5);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    /* border-radius:50% 50%; profil image*/
+    border-radius:5%;
+}
+
+img:hover{
+    cursor: pointer;
+    border: .1rem solid rgba(162, 7, 252, 0.5);
+    opacity: 0.9;
+    transition: 3s all;
+}
+
+.my_clearfix::after{
+    content:"";
+    display: block;
+    clear:both;
+}
