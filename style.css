@@ -8,8 +8,8 @@ Project Name: Blog Page
 
 /* ##################################################### */
 /* ### ROOT ###*/
-:root{
-    --template-bg:rgb(248, 248, 240);
+:root {
+    --template-bg: rgb(248, 248, 240);
 }
 
 /* ##################################################### */
@@ -28,7 +28,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     position: relative;
     line-height: 1.7;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     /*10*2=20px*/
     background-color: var(--template-bg);
 }
@@ -42,78 +42,78 @@ ul {
 }
 
 p {
-    margin:0 2rem;
+    margin: 0 2rem;
     text-align: justify;
-    font-size: 1.5rem!important;
+    /* font-size: 1.5rem!important; */
     opacity: .9;
-    font-weight:400;
+    font-weight: 400;
 }
 
-i{
-    font-size: 2rem;
-    color:rgba(162, 7, 252, 0.5);
+i {
+    font-size: 1.5rem;
+    /* color:rgba(162, 7, 252, 0.5); */
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     /* border-radius:50% 50%; profil image*/
-    border-radius:5%;
+    border-radius: 5%;
 }
 
-img:hover{
+img:hover {
     cursor: pointer;
     border: .1rem solid rgba(162, 7, 252, 0.5);
     opacity: 0.9;
     transition: 3s all;
 }
 
-.my_clearfix::after{
-    content:"";
+.my_clearfix::after {
+    content: "";
     display: block;
-    clear:both;
+    clear: both;
 }
 
 /* ##################################################### */
 /* ### LINE CLAMP ###*/
-.line-clamp4{
+.line-clamp4 {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
 }
 
-.line-clamp6{
+.line-clamp6 {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
 }
 
-.line-clamp8{
+.line-clamp8 {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
 }
 
-.line-clamp10{
+.line-clamp10 {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
 }
 
 
 /* ##################################################### */
 /* ### NAVBAR FIRST ###*/
-#navbar_first{
+#navbar_first {
     background-color: black;
-    color:white;
+    color: white;
     max-height: 3rem;
 }
 
-#navbar_first ul li{
+#navbar_first ul li {
     display: inline-block;
 }
 
@@ -121,9 +121,29 @@ img:hover{
 
 /* ##################################################### */
 /* ### FOOTER###*/
-footer{
+footer {
     height: 20rem;
     width: auto;
     background-color: black;
-    color:white;
+    color: white;
+}
+
+/* ##################################################### */
+/* ### BACK TOP###*/
+#back_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: .5rem 2rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+    background-color: #0B5ED7;
+    color: white;
+}
+
+#back_top:hover {
+    background-color: white;
+    color: #0B5ED7;
+    opacity: 0.9;
+    transition: all 3s;
 }
