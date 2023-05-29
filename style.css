@@ -74,6 +74,14 @@ img:hover {
     clear: both;
 }
 
+.icon_size{
+    font-size: 1.5rem;
+}
+
+.flag{
+    width: 2rem;
+}
+
 /* ##################################################### */
 /* ### LINE CLAMP ###*/
 .line-clamp4 {
@@ -120,8 +128,9 @@ img:hover {
     padding-top:1rem;
 }
 
-/* ### NAVBAR SECOND ###*/
 
+
+/* ### NAVBAR SECOND ###*/
 #navbar_second {
     position:sticky;
     top: 0;
@@ -132,7 +141,6 @@ img:hover {
    border-radius: 50% 50%;
    width: 5.5rem;
 }
-
 
 /* ##################################################### */
 /* ### FOOTER###*/
