@@ -66,46 +66,108 @@
                     </ul>
                 </div>
                 <div id="navbar_first_right" class="col-3">
-                    <button class="btn btn-sm "><i style="color:red;" class="fa-solid fa-circle-user"></i></button>
                     <button class="btn  btn-sm "><i style="color:red;" class="fa-solid fa-user-secret"></i></button>
+                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalId"><i style="color:red;" class="fa-solid fa-circle-user"></i></button>
                 </div>
             </div>
         </div>
     </nav>
+
+<!-- Modal Login -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Giriş</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- İmportant: password,name,user,username bunları değiştirin -->
+            <div class="modal-body">
+                <form action="#" method="get" autocomplete="on">
+                    <div class="form-group mb-3">
+                        <label for="email_data">Email</label>
+                        <input 
+                        type="email" 
+                        id="email_data" 
+                        name="email_data" 
+                        class="form-control" 
+                        placeholder="Emailinizi yazınız..." 
+                        required 
+                        autofocus />
+                        <label class="text-danger">email not found</label>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password_data">Şifre</label>
+                        <input 
+                        type="password" 
+                        id="passwd_data" 
+                        name="passwd_data" 
+                        class="form-control" 
+                        placeholder="Şifrenizi yazınız..." 
+                        required 
+                        autofocus />
+                        <label class="text-danger">email not found</label>
+                    </div>
+                    <div class="form-group mb-3">
+                        <button type="reset" class="btn btn-danger">Temizle</button>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Register: firstName, middleName, lastName, email, passwd, address -->
+
+
     <!-- navbar First end -->
 
+    <!-- YAPILACAKLAR
+    Modal Login Register
+    Header
+    Footer
+    fixed-top
+    -->
     <!-- navbar start -->
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top44">
-      <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="d-flex my-2 my-lg-0">
-                <input class="form-control me-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top44">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-     </div>
-   </nav>
-   
+    </nav>
+
     <!-- navbar end -->
 
     <!-- header start -->
@@ -115,32 +177,55 @@
     <!-- main start -->
     <main id="main_id">
         <section>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est id beatae eveniet veritatis repellat magni architecto perspiciatis temporibus aut quis ratione explicabo, nihil amet repudiandae harum nam quo odit iusto?
-Ea a amet voluptate numquam sunt placeat aut minus, iste corporis praesentium, aliquam, eaque veritatis nam delectus unde. Alias quaerat facilis hic nam earum quas dolorem accusantium aspernatur fugiat aperiam.
-Ea adipisci sequi ipsam labore, repellat repudiandae quasi, tempore rerum sunt minima voluptas, dolore natus velit quibusdam iusto! Ab consectetur incidunt perspiciatis deleniti doloremque. Maiores dolorum labore vitae id quod!
-Eius vero est magni error laudantium dignissimos delectus suscipit, aliquam in, quas ab aliquid libero, soluta illo odio ducimus nam. Voluptate nulla nemo quia? Illum quam repellendus minus dignissimos quis?
-Obcaecati deleniti, quam at laudantium, ullam assumenda fugiat sint adipisci illum hic explicabo facilis repudiandae rerum. Fuga aliquid vitae libero ad neque laboriosam quia quidem distinctio magni, eaque, perferendis ab!
-Maxime, debitis error optio hic quas fugiat velit magnam aliquid tenetur ea maiores totam fugit libero qui deleniti dolor veniam voluptate harum? Amet perspiciatis unde beatae voluptatum praesentium eligendi laborum.
-Mollitia magni ratione possimus debitis quis! Autem nemo iste sequi reiciendis deserunt facilis, minima error cupiditate porro nulla laborum ipsa ratione perferendis impedit maxime necessitatibus inventore voluptas temporibus pariatur odit?
-Quod nisi suscipit quo, dolorum rem a optio quos maxime ullam nobis! Perspiciatis quam distinctio alias saepe exercitationem repellendus eligendi quos, officia excepturi labore ea neque nihil velit molestias quasi?
-Reprehenderit, consequuntur asperiores sint odio eos dolorem veritatis quis eius voluptatum esse. Illo sed natus officia nam, amet eligendi libero, perspiciatis quisquam inventore consequuntur aut vitae, repellat dolores. Corrupti, itaque.
-Vero, debitis sit incidunt veniam aliquam fugiat quia accusantium quae minus nihil possimus suscipit dolores aspernatur unde impedit sequi magni! Tempora, dolor nostrum tenetur dolorum hic excepturi minus praesentium qui.
-Inventore quisquam ad sapiente culpa laboriosam accusamus tempora minus ex eum. Praesentium, totam molestias. Eaque neque quos ex odio accusamus exercitationem esse modi distinctio, labore tempora officia incidunt impedit hic.
-Ea similique a facere blanditiis eius neque provident deleniti impedit cum nulla maxime accusamus ab soluta, ipsa optio accusantium ad dignissimos possimus tempora harum eaque reprehenderit nostrum! Recusandae, perferendis at.
-Est magnam aliquid earum perspiciatis ea ipsam soluta minima laudantium fugiat excepturi sunt ut voluptas consequatur facere blanditiis, sed repellat eveniet deserunt temporibus corrupti. Veritatis cupiditate vero illum eligendi mollitia!
-Voluptate inventore cum impedit repudiandae iusto molestiae rerum voluptatum tempora fugit aperiam quod laudantium, beatae at reiciendis architecto magni, mollitia placeat? Eveniet voluptas reprehenderit fugiat est quidem enim repellendus harum?
-Recusandae quas cumque voluptas in molestias cupiditate fuga nobis, animi, voluptatem ex quaerat tenetur ut labore dolorem dicta sint provident tempore quae illo commodi atque, quidem incidunt enim facere! Itaque?
-Maiores, natus. Esse provident, possimus numquam modi aperiam ipsam temporibus veniam autem eum ducimus cumque impedit delectus natus inventore iusto corrupti voluptatum sequi. Nemo minus magnam ab vel, nisi a.
-Quod expedita eius quas in explicabo, amet reiciendis a tempora, vel earum consequatur laboriosam excepturi doloribus dolorum officiis voluptatum soluta asperiores fuga inventore error eligendi voluptates dolores! Harum, illo esse!
-Corrupti perferendis veritatis sit. Ut in autem maiores ipsum minima aperiam cumque odio consequatur, repudiandae deleniti at non ratione assumenda, esse ullam eum, quas quod sed aliquid facere illo. Deleniti!
-Soluta veniam saepe eaque quidem possimus ipsa praesentium, reiciendis at doloremque distinctio cumque inventore, aut, nostrum amet sint molestiae ab delectus dolores. Mollitia quo odio beatae error placeat recusandae itaque?
-Exercitationem explicabo error assumenda blanditiis! Eos asperiores, aliquid omnis magni error officiis reprehenderit aut repellat ex similique voluptate quam? Odio ab culpa, sapiente temporibus totam eligendi eius? Pariatur, dolore architecto?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisie os magni error officiis reprehenderit aut repellat ex
+                similique voluptate quam? Odio ab culpa, sapiente temporibus totam eligendi eius? Pariatur, dolore
+                architecto?
+            
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, deleniti sequi est ad nesciunt iste autem! Minima quidem, consectetur veritatis neque repellat, aliquam tempore nesciunt exercitationem ducimus reiciendis sequi error?
+            Obcaecati molestiae quibusdam ut aspernatur sit libero iste minima voluptatem voluptas! Minus omnis nostrum deserunt harum, assumenda distinctio quos eveniet perspiciatis similique beatae voluptatum, repudiandae mollitia enim suscipit in quas.
+            Quas, dignissimos sed. Cum dicta optio cumque praesentium repudiandae accusamus mollitia nam perferendis nesciunt excepturi! Repudiandae dolore omnis culpa labore reiciendis deserunt iusto accusamus eius, consectetur repellat, expedita enim doloribus.
+            Optio illo vitae, unde, quia temporibus modi esse distinctio possimus, corrupti quod nemo sequi illum veritatis. Labore, eligendi eius! Eius distinctio dolorum fugit, veniam omnis voluptates expedita eveniet ipsam quo.
+            Neque, sunt deleniti. Dolorem dolore cumque, accusantium itaque error, corrupti nobis quae animi ut dicta tenetur. Et repudiandae ipsam in reiciendis officiis blanditiis. Nihil autem quae quibusdam molestias, nemo atque!
+            Animi quis iure facilis veniam magnam dolor odio id in sapiente ea provident non nulla, architecto voluptate! Molestias et ipsam fuga dolorem blanditiis optio, facere voluptates nemo? Accusantium, porro reiciendis?
+            Ducimus quaerat voluptas, exercitationem veniam dolorem maiores libero dolore alias qui eaque illo voluptate est veritatis, tempora a, dolores ullam possimus. Aspernatur a dolorem ad aperiam nisi fugit fugiat ea.
+            Unde maxime earum temporibus dicta provident voluptatem nostrum, eius maiores voluptatum debitis iusto excepturi accusamus rerum ut voluptate qui? Saepe illo quo deserunt ea, excepturi reprehenderit sequi dolor natus quae.
+            Quasi, cum? At, velit molestiae. Nam voluptates facilis assumenda non consequatur quas ad necessitatibus placeat. Veniam, omnis hic accusantium vel quae itaque tempore nisi quasi earum voluptates animi, mollitia exercitationem.
+            Officiis voluptas tempora a laborum eligendi nesciunt, velit nisi deserunt ab quasi mollitia animi debitis illo itaque ullam labore molestiae porro minus architecto, incidunt nemo? Sint temporibus a dolorum culpa?
+            </p>
         </section>
     </main>
     <!-- main end -->
 
     <!-- footer start -->
-    <footer id="footer_id"></footer>
+    <footer id="footer_id">
+        <section id="footer_contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h3>Company INC</h3>
+                        <p class="line-clamp6">Company Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis impedit accusamus reprehenderit possimus dolores quidem culpa omnis, recusandae asperiores hic architecto ratione assumenda, quam beatae cupiditate enim voluptatum, et iste?
+                        Quo ratione iure debitis, quis possimus atque repellendus at tempore officia. Commodi, perspiciatis consectetur provident numquam fugiat, excepturi temporibus quasi, molestias unde voluptate animi ab quisquam aperiam vitae maxime magni!</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h3>Email</h3>
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="Konu"/>
+                            <input type="text" class="form-control" placeholder="Mail"/>
+                            <textarea name="" id="" cols="12" rows="2"></textarea>
+                            <button class="btn btn-primary">Email Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center bg-dark text-white" id="footer_copy_right"> 
+            &copy; Bütün haklar Saklıdır.  <a href="#">Design and codes By Hamit Mızrak</a>
+        </section>
+    </footer>
     <!-- footer end -->
 
     <!-- ends codes -->

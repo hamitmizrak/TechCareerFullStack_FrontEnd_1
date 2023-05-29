@@ -116,3 +116,14 @@ img:hover{
 #navbar_first ul li{
     display: inline-block;
 }
+
+
+
+/* ##################################################### */
+/* ### FOOTER###*/
+footer{
+    height: 20rem;
+    width: auto;
+    background-color: black;
+    color:white;
+}
