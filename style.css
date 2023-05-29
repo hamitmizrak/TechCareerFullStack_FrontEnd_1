@@ -129,12 +129,12 @@ img:hover {
 }
 
 
-
 /* ### NAVBAR SECOND ###*/
 #navbar_second {
     position:sticky;
     top: 0;
     z-index: 1;
+    opacity: 1;
 }
 
 #logo_id {
