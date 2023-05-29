@@ -8,9 +8,9 @@ Project Name: Blog Page
 
 /* ##################################################### */
 /* ### ROOT ###*/
-/* :root{
-    --template_bg:
-} */
+:root{
+    --template-bg:rgb(248, 248, 240);
+}
 
 /* ##################################################### */
 /* ### COMMON PROPERTY ###*/
@@ -30,6 +30,7 @@ body {
     line-height: 1.7;
     font-size: 2rem;
     /*10*2=20px*/
+    background-color: var(--template-bg);
 }
 
 a {
