@@ -111,12 +111,27 @@ img:hover {
     background-color: black;
     color: white;
     max-height: 3rem;
+    position:sticky;
+    top: 0;
 }
 
-#navbar_first ul li {
+#navbar_first_left ul li, #navbar_first_right button {
     display: inline-block;
+    padding-top:1rem;
 }
 
+/* ### NAVBAR SECOND ###*/
+
+#navbar_second {
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#logo_id {
+   border-radius: 50% 50%;
+   width: 5.5rem;
+}
 
 
 /* ##################################################### */
@@ -126,6 +141,12 @@ footer {
     width: auto;
     background-color: black;
     color: white;
+    padding:1rem
+}
+
+#footer_copy_right{
+    height: 5rem;
+    padding: 2rem;
 }
 
 /* ##################################################### */
