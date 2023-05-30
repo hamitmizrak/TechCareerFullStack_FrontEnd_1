@@ -116,7 +116,7 @@ img:hover {
 /* ##################################################### */
 /* ### NAVBAR FIRST ###*/
 #navbar_first {
-    background-color: black;
+    background-color: black!important;
     color: white;
     max-height: 3rem;
     position:sticky;
@@ -140,6 +140,23 @@ img:hover {
 #logo_id {
    border-radius: 50% 50%;
    width: 5.5rem;
+}
+
+/* ##################################################### */
+/* ### HEADER###*/
+header{
+    background-image: url('./img/header.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    /* height: 50rem; */
+    height: 80vh;
+    padding-top:15rem;
+    z-index: -1;
+}
+
+header h1,h4{
+    color:white;
+    text-transform: uppercase;
 }
 
 /* ##################################################### */
