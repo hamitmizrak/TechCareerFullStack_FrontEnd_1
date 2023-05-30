@@ -61,10 +61,10 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar_second">
     <!-- start codes -->
     <noscript>Bu browser JS desteklemiyor.</noscript>
-    <span id="no_script""></span>
+    <span id="no_script"></span>
 
     <!-- navbar First start -->
-    <nav id = "navbar_first">
+    <nav id="navbar_first">
         <div class="container">
             <div class="row">
                 <div id="navbar_first_left" class="col-9">
@@ -88,289 +88,227 @@
                 </div>
             </div>
         </div>
-        </nav>
+    </nav>
 
-        <!-- Modal Login -->
-        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalTitleId">Giriş</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <!-- İmportant: password,name,user,username bunları değiştirin -->
-                    <div class="modal-body">
-                        <form action="#" method="get" autocomplete="on">
-                            <div class="form-group mb-3">
-                                <label for="email_data">Email</label>
-                                <input type="email" id="email_data" name="email_data" class="form-control"
-                                    placeholder="Emailinizi yazınız..." required autofocus />
-                                <label class="text-danger">email not found</label>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="password_data">Şifre</label>
-                                <input type="password" id="passwd_data" name="passwd_data" class="form-control"
-                                    placeholder="Şifrenizi yazınız..." required />
-                                <label class="text-danger">email not found</label>
-                            </div>
-                            <div class="form-group mb-3">
-                                <button type="reset" class="btn btn-danger">Temizle</button>
-                                <button type="submit" class="btn btn-primary">Gönder</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+    <!-- Modal Login -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Giriş</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- İmportant: password,name,user,username bunları değiştirin -->
+                <div class="modal-body">
+                    <form action="#" method="get" autocomplete="on">
+                        <div class="form-group mb-3">
+                            <label for="email_data">Email</label>
+                            <input type="email" id="email_data" name="email_data" class="form-control"
+                                placeholder="Emailinizi yazınız..." required autofocus />
+                            <label class="text-danger">email not found</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password_data">Şifre</label>
+                            <input type="password" id="passwd_data" name="passwd_data" class="form-control"
+                                placeholder="Şifrenizi yazınız..." required />
+                            <label class="text-danger">email not found</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <button type="reset" class="btn btn-danger">Temizle</button>
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Register: firstName, middleName, lastName, email, passwd, address -->
+    <!-- navbar First end -->
+
+    <!-- navbar start -->
+    <nav id="navbar_second" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top44">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg" alt="it isn't showing logo" id="logo_id">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#first" aria-current="page">Anasayfa <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#studies">Çalışmalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Başarılar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yeni Haberler</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Yazılım</a>
+                            <a class="dropdown-item" href="#">Bilim</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Arama ..." autofocus />
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Arama </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- header start -->
+    <header id="header_id">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="p-5 text-center">
+                        <h1 class="text-uppercase display-3 shadow p-4 wow animate__bounceIn" data-wow-delay="0.50s">
+                            Full Stack Developer Eğitimine Hoşgeldiniz</h1>
+                        <h4>Frontend & Backend</h4>
+                        <a href="" class="btn btn-success wow animate__bounceIn" data-wow-delay="0.60s">Bizi Takip
+                            Edin</a>
+                        <a href="" class="btn btn-outline-primary wow animate__bounceIn"
+                            data-wow-delay="0.70s">Linkedin</a>
+                        <a href="" class="btn btn-danger wow animate__bounceIn" data-wow-delay="0.80s">Youtube</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Register: firstName, middleName, lastName, email, passwd, address -->
-        <!-- navbar First end -->
+    </header>
+    <!-- header end -->
 
-        <!-- navbar start -->
-        <nav id="navbar_second" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top44">
+    <!-- main start -->
+    <main id="main_id">
+        <section id="studies" class="wow animate__bounceInDown" data-wow-delay="0.50s">
+            <h2 class="text-center text-uppercase">Çalışmalarımız</h2>
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.jpg" alt="it isn't showing logo" id="logo_id">
-                </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#first" aria-current="page">Anasayfa <span
-                                    class="visually-hidden">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hakkımızda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">İletişim</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input class="form-control me-sm-2" type="text" placeholder="Arama ..." autofocus />
-                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Arama </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- navbar end -->
-
-        <!-- header start -->
-        <header id="header_id">
-            <div class="jumbotron">
-                <div class="container">
-                    <div class="row">
-                        <div class="p-5 text-center">
-                            <h1 class="text-uppercase display-3 shadow p-4 wow animate__bounceIn" data-wow-delay="0.50s" >Full Stack Developer Eğitimine Hoşgeldiniz</h1>
-                            <h4>Frontend & Backend</h4>
-                            <a href="" class="btn btn-success wow animate__bounceIn"  data-wow-delay="0.60s">Bizi Takip Edin</a>
-                            <a href="" class="btn btn-outline-primary wow animate__bounceIn"  data-wow-delay="0.70s">Linkedin</a>
-                            <a href="" class="btn btn-danger wow animate__bounceIn"  data-wow-delay="0.80s">Youtube</a>
-                        </div>
+                <div class="row">
+                    <!-- 1.icon -->
+                    <div class="col-md-4 col-xl-4 text-center">
+                        <!-- fa-sm fa-lg fa-xl fa-2xl -->
+                        <i class="fa-solid fa-camera-retro studies_icon"></i>
+                        <h4 class="text-dark">Frontend</h4>
+                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            molestiae nesciunt dignissimos voluptatum dolorem repellat non voluptate optio quisquam
+                            facilis!</p>
+                        <a href="">More</a>
+                    </div>
+                    <!-- 2.icon -->
+                    <div class="col-md-4 col-xl-4 text-center">
+                        <!-- fa-sm fa-lg fa-xl fa-2xl -->
+                        <i class="fa-solid fa-sliders studies_icon"></i>
+                        <h4 class="text-dark">Backend</h4>
+                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            molestiae nesciunt dignissimos voluptatum dolorem repellat non voluptate optio quisquam
+                            facilis!</p>
+                        <a href="">More</a>
+                    </div>
+                    <!-- 3.icon -->
+                    <div class="col-md-4 col-xl-4 text-center">
+                        <!-- fa-sm fa-lg fa-xl fa-2xl -->
+                        <i class="fa-solid fa-database studies_icon"></i>
+                        <h4 class="text-dark">Database</h4>
+                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            molestiae nesciunt dignissimos voluptatum dolorem repellat non voluptate optio quisquam
+                            facilis!</p>
+                        <a href="">More</a>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- header end -->
-
-        <!-- main start -->
-        <main id="main_id">
-            <section id="first">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisie os magni error officiis reprehenderit aut repellat
-                    ex
-                    similique voluptate quam? Odio ab culpa, sapiente temporibus totam eligendi eius? Pariatur, dolore
-                    architecto?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea optio consequuntur quo, rerum vitae ut
-                    a,
-                    tempore, dolore voluptatum dolorum non nulla necessitatibus eaque officiis voluptatem neque porro
-                    placeat explicabo.
-                    Vero doloremque itaque ad quo, expedita eligendi, consectetur velit officiis fuga sequi, nesciunt
-                    omnis
-
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde at vero optio dolorum perspiciatis,
-                    repellendus sapiente cum cupiditate reiciendis accusamus quia dicta dignissimos, blanditiis ea sed
-                    eveniet quaerat, nemo itaque!
-                    Omnis debitis sed magnam saepe consequatur, suscipit alias, exercitationem perspiciatis vel voluptas
-                    possimus nihil minima voluptate aperiam obcaecati quia incidunt labore accusamus temporibus
-                    perferendis repudiandae. Porro doloremque eius earum voluptatum!
-                    Suscipit omnis placeat temporibus quisquam pariatur vel laboriosam et? Esse itaque iusto dignissimos
-                    cupiditate expedita minima deleniti officiis perferendis nam possimus, omnis alias odio perspiciatis
-                    eveniet obcaecati libero repellat dolore!
-                    Inventore, neque modi? Culpa iure odit, ad rerum quisquam repellendus corrupti inventore, error
-                    debitis, ipsum dolore laborum? Culpa nisi cum aut? Ea fuga commodi perspiciatis velit quia harum
-                    eveniet maiores?
-                    Quos non libero consequatur. Aspernatur consequatur quisquam adipisci minima odio, temporibus
-                    perspiciatis animi fugit recusandae quia dolorum nisi sequi, molestias saepe aliquam a labore,
-                    nesciunt quam. Quo blanditiis dignissimos accusantium.
-                    Inventore repellat suscipit id consectetur alias! Voluptatum incidunt atque aut accusamus voluptate.
-                    Excepturi earum aut possimus iusto suscipit quisquam accusamus pariatur aspernatur. Eum, fuga rerum
-                    enim amet incidunt consectetur suscipit.
-                    Perferendis nihil facilis consequuntur reiciendis doloribus necessitatibus voluptatum commodi
-                    doloremque saepe tempore itaque debitis porro voluptate deserunt eveniet inventore eos tenetur
-                    velit, sequi assumenda neque explicabo vitae. Pariatur, porro. Temporibus!
-                    Rerum quibusdam voluptate possimus beatae omnis assumenda provident deserunt cumque architecto quas
-                    ut deleniti cupiditate aut ab nobis maiores voluptatum molestias veniam, doloremque qui nisi!
-                    Sapiente quas deserunt doloremque odit?
-                    Doloribus nobis saepe perferendis. Facilis, perferendis sequi. Maiores consectetur, libero
-                    repudiandae, recusandae voluptates similique officiis laudantium repellat nobis blanditiis dolores
-                    ad veritatis? Libero eligendi voluptatibus dignissimos suscipit inventore voluptatum excepturi?
-                    Optio illo soluta sint corrupti animi unde distinctio quibusdam eos! Mollitia ratione, consequuntur
-                    quidem ea perferendis sunt, dolores esse amet fugit, repellat doloremque optio cumque? Laudantium
-                    quis voluptatem alias quibusdam!
-                    Provident impedit vel autem facilis, officiis, distinctio placeat hic et, mollitia dolores
-                    repudiandae cum eaque tempora reprehenderit maxime. Beatae voluptate sequi nam illum fugit nisi
-                    repellendus officiis cupiditate temporibus earum.
-                    Magni tempora fugiat ratione vero pariatur aliquam. Animi, ad obcaecati laboriosam facilis nulla
-                    sequi explicabo fuga quod reiciendis fugiat, cum corporis excepturi neque quaerat aspernatur dolor
-                    odio labore temporibus vero.
-
-                    <a href="#no_script">deneme55</a>
-                </p>
-            </section>
-            <br><br>
-            <section id="contact">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, hic amet sed, repellendus totam
-                    alias voluptas delectus porro quas eius ipsa enim odit voluptatum voluptate deserunt aliquid
-                    asperiores nihil dolorem?
-                    Id ab iste accusamus voluptates omnis suscipit, dolores nihil eveniet non! Iusto, rerum, dolor
-                    inventore natus temporibus animi nobis cupiditate provident odit reiciendis ipsa velit
-                    necessitatibus accusamus explicabo ducimus sint?
-                    Eos quisquam vel, quis expedita repudiandae non natus a explicabo quam enim. Tempora voluptate minus
-                    nam itaque facilis quibusdam laboriosam maxime dolor dolores, assumenda rem doloribus cupiditate
-                    quas quod ratione.
-                    Quidem quaerat quo blanditiis sunt accusamus atque iure distinctio ratione dolor officia! Sint
-                    quisquam accusamus corporis quo libero veritatis. Vero sed esse ratione omnis labore, beatae ad
-                    eveniet obcaecati sapiente?
-                    Officiis enim ea perferendis non explicabo sit dolorem quo rem odit. Rem cum voluptatum optio.
-                    Necessitatibus deleniti maiores quae dignissimos harum voluptas quo iusto, quasi nulla sed
-                    obcaecati, inventore dolorum.
-                    Laudantium eius rem ex officia voluptate? Magnam recusandae hic sed eligendi consectetur autem illo
-                    nemo laudantium tempore aliquid quae impedit a, itaque incidunt consequuntur qui pariatur aspernatur
-                    velit dolor possimus?
-                    Sint pariatur cupiditate facilis sapiente optio eveniet delectus! Obcaecati excepturi quidem
-                    accusamus ab dolores officiis atque, numquam qui nobis non neque similique cumque laudantium
-                    consequuntur possimus expedita cum, in autem.
-                    Praesentium tempore hic, fuga consectetur atque quisquam repellat provident quo officiis. Temporibus
-                    odio iure ipsa? Voluptates quo nihil modi recusandae maiores tenetur debitis eos veritatis, officiis
-                    voluptas? Saepe, magnam ex.
-                    Neque nulla dolore ipsa suscipit ab quis inventore voluptatem aliquam adipisci. Ad debitis corporis
-                    ea repellendus aperiam sequi modi sint deleniti soluta, quam numquam maxime, eos exercitationem
-                    ratione magni sed.
-                    Reiciendis repellat placeat illo nulla voluptatum ullam aspernatur tempore facilis laborum omnis!
-                    Dolor animi quibusdam nihil? Temporibus facere nihil cum distinctio veritatis culpa sed, esse ex
-                    quas, inventore voluptatibus molestiae!
-                    Itaque autem alias nulla numquam animi id, excepturi, modi dolorum eveniet praesentium laboriosam
-                    dicta quibusdam in cupiditate consectetur dolor? Repudiandae, neque adipisci. Praesentium illum
-                    delectus magni libero harum officiis pariatur?
-                    Provident ea beatae modi repellendus, aliquid aspernatur omnis temporibus, eum ducimus eos delectus.
-                    Voluptatum repellat veritatis in dolores dolor consequatur iure asperiores inventore ipsa non. Nulla
-                    fugiat maiores omnis facilis.
-                    Debitis tempore sint veritatis hic nobis cumque numquam laudantium enim corrupti provident illum in
-                    voluptatum, odio sed minima optio reprehenderit quos ea expedita architecto sit. Pariatur voluptas
-                    aut numquam ullam?
-                    Tenetur maiores recusandae qui ut, cum praesentium facilis dicta nostrum eos omnis vel harum
-                    consectetur, quibusdam asperiores sint, expedita illum magnam maxime rem. Veniam illo voluptates
-                    eius, asperiores laborum accusantium.
-                    Libero impedit consequatur distinctio! Iste non illo voluptatem, velit debitis amet laudantium
-                    accusantium suscipit tempore, libero at enim esse nostrum minima reprehenderit perferendis qui quam
-                    asperiores laborum nihil similique exercitationem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Laudantium tempora, at esse quae aspernatur accusantium excepturi
-                    sint culpa saepe quo obcaecati dolore tempore quisquam officia est rem nesciunt quos in quidem,
-                    cupiditate alias! Animi exercitationem eaque ad, soluta earum explicabo.</p>
-            </section>
-        </main>
-        <!-- main end -->
-
-        <!-- footer start -->
-        <footer id="footer_id">
-            <section id="footer_contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-lg-3">
-                            <h3 class="text-uppercase" style="margin-left:2.5rem">Contact</h3>
-
-                            <!-- fa-sm fa-lg fa-xl fa-2xl -->
-                            <div class="d-grid gap-4">
-                                <p> <i class="fas fa-home me-3 text-secondary"></i> Malatya / TÜRKİYE</p>
-                                <p> <i class="fas fa-envelope me-3 text-secondary"></i>info@example.com</p>
-                                <p> <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                                <p> <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
-
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <h3 class="text-uppercase" style="margin-left:2.5rem">Company INC</h3>
-                            <p class="line-clamp8">Company Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Quis
-                                impedit accusamus reprehenderit possimus dolores quidem culpa omnis, recusandae
-                                asperiores
-                                hic architecto ratione assumenda, quam beatae cupiditate enim voluptatum, et iste?
-                                Quo ratione iure debitis, quis possimus atque repellendus at tempore officia. Commodi,
-                                perspiciatis consectetur provident numquam fugiat, excepturi temporibus quasi, molestias
-                                unde voluptate animi ab quisquam aperiam vitae maxime magni!</p>
-                        </div>
-                        <div class="col-md col-lg-6">
-                            <h3 class="text-uppercase">Email</h3>
-                            <form action="#" id="form_email">
-                                 <input type="text" class="form-control mb-2" placeholder="Konu"  required />  <!--autofocus -->
-                                <input type="text" class="form-control mb-2" placeholder="Mail adresiniz" required />
-                                <textarea class="form-control" rows="3" placeholder="Email Konusu ..."></textarea>
-                                <button type="reset" class="btn btn-danger mt-3">Temizle</button>
-                                <button type="submit" class="btn btn-primary mt-3">Email Send</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </footer>
-        <section class="text-center bg-dark text-white fixed-bottom44" id="footer_copy_right">
-            <div class="container-fluid">
-                2021-2022 &copy; Bütün haklar Saklıdır. <a href="#">Design and codes By Hamit Mızrak</a>
             </div>
         </section>
-        <!-- footer end -->
 
-        <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer id="footer_id">
+        <section id="footer_contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <h3 class="text-uppercase" style="margin-left:2.5rem">Contact</h3>
+
+                        <!-- fa-sm fa-lg fa-xl fa-2xl -->
+                        <div class="d-grid gap-4">
+                            <p> <i class="fas fa-home me-3 text-secondary"></i> Malatya / TÜRKİYE</p>
+                            <p> <i class="fas fa-envelope me-3 text-secondary"></i>info@example.com</p>
+                            <p> <i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                            <p> <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <h3 class="text-uppercase" style="margin-left:2.5rem">Company INC</h3>
+                        <p class="line-clamp8">Company Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quis
+                            impedit accusamus reprehenderit possimus dolores quidem culpa omnis, recusandae
+                            asperiores
+                            hic architecto ratione assumenda, quam beatae cupiditate enim voluptatum, et iste?
+                            Quo ratione iure debitis, quis possimus atque repellendus at tempore officia. Commodi,
+                            perspiciatis consectetur provident numquam fugiat, excepturi temporibus quasi, molestias
+                            unde voluptate animi ab quisquam aperiam vitae maxime magni!</p>
+                    </div>
+                    <div class="col-md col-lg-6">
+                        <h3 class="text-uppercase">Email</h3>
+                        <form action="#" id="form_email">
+                            <input type="text" class="form-control mb-2" placeholder="Konu" required />
+                            <!--autofocus -->
+                            <input type="text" class="form-control mb-2" placeholder="Mail adresiniz" required />
+                            <textarea class="form-control" rows="3" placeholder="Email Konusu ..."></textarea>
+                            <button type="reset" class="btn btn-danger mt-3">Temizle</button>
+                            <button type="submit" class="btn btn-primary mt-3">Email Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <section class="text-center bg-dark text-white fixed-bottom44" id="footer_copy_right">
+        <div class="container-fluid">
+            2021-2022 &copy; Bütün haklar Saklıdır. <a href="#">Design and codes By Hamit Mızrak</a>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
 
 
-        <!-- ends codes -->
-        <!-- Counter JS -->
-        <!-- Waypoints JavaScript Libraries -->
-        <script src="./experiences/waypoints/waypoints.min.js"></script>
-        <!-- Counterup JavaScript Libraries -->
-        <script src="./experiences/counterup/counterup.min.js"></script>
+    <!-- ends codes -->
+    <!-- Counter JS -->
+    <!-- Waypoints JavaScript Libraries -->
+    <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <!-- Counterup JavaScript Libraries -->
+    <script src="./experiences/counterup/counterup.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-            </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-            </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
 
-        <!-- external js -->
-        <script src="./template.js"></script>
+    <!-- external js -->
+    <script src="./template.js"></script>
 </body>
 
 </html>

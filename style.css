@@ -160,6 +160,22 @@ header h1,h4{
 }
 
 /* ##################################################### */
+/* ### MAIN###*/
+
+/* ### ÇALIŞMALARIMIZ ###*/
+#studies{
+    margin:4rem 0px;
+}
+.studies_icon{
+    font-size: 6rem;
+    margin-bottom:1rem;
+    box-shadow: 0.5px .5px .3px 1px rgba(0,0,0,0.4);
+}
+.studies_icon:hover{
+    cursor: pointer;
+}
+
+/* ##################################################### */
 /* ### FOOTER###*/
 footer {
     height: 20rem;
