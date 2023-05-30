@@ -29,12 +29,6 @@
     <!-- Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet">
 
-    <!-- jquery UI -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-
     <!-- animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -53,6 +47,13 @@
 
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- jquery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
 
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
@@ -78,9 +79,9 @@
                     </ul>
                 </div>
                 <div id="navbar_first_right" class="col-3">
-                    <button class="btn  btn-sm "><i style="color:#6F9EE0;"
-                            class="fa-solid fa-user-secret icon_size"></i></button>
-                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalId"><i
+                    <button class="btn  btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offCanvasRegisterId"><i
+                            style="color:#6F9EE0;" class="fa-solid fa-user-secret icon_size"></i></button>
+                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#loginModalId"><i
                             style="color:#6F9EE0;" class="fa-solid fa-circle-user icon_size"></i></button>
                     <button class="btn  btn-sm "><img src="./img/flag/en.png" class="flag" alt="" /></button>
                     <button class="btn  btn-sm "><img src="./img/flag/tr.png" class="flag" alt="" /></button>
@@ -92,8 +93,8 @@
 
     <!-- Modal Login -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
-        aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal fade" id="loginModalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -129,6 +130,18 @@
         </div>
     </div>
     <!-- Modal Register: firstName, middleName, lastName, email, passwd, address -->
+    <div class="offcanvas offcanvas-start bg-dark text-white" data-bs-backdrop="static" tabindex="-1"
+        id="offCanvasRegisterId" aria-labelledby="offCanvasRegisterIdLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offCanvasRegisterIdLabel">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                I will not close if you click outside of me.
+            </div>
+        </div>
+    </div>
     <!-- navbar First end -->
 
     <!-- navbar start -->
@@ -145,20 +158,20 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#first" aria-current="page">Anasayfa <span
+                        <a class="nav-link active" href="#" aria-current="page">Anasayfa <span
                                 class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#studies">Çalışmalar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Başarılar</a>
+                        <a class="nav-link" href="#performance">Başarılar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Yeni Haberler</a>
+                        <a class="nav-link" href="#newspaper">Yeni Haberler</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#blog" id="dropdownId" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Yazılım</a>
@@ -174,6 +187,7 @@
         </div>
     </nav>
     <!-- navbar end -->
+
 
     <!-- header start -->
     <header id="header_id">
@@ -198,6 +212,7 @@
 
     <!-- main start -->
     <main id="main_id">
+        <!-- start section Çalışmalarımız -->
         <section id="studies" class="wow animate__bounceInDown" data-wow-delay="0.50s">
             <h2 class="text-center text-uppercase">Çalışmalarımız</h2>
             <div class="container">
@@ -235,6 +250,38 @@
                 </div>
             </div>
         </section>
+        <!-- end section Çalışmalarımız -->
+
+
+        <!-- start section Başarılar -->
+        <section id="performance" class="wow fadeIn">
+            <div class="container">
+                <div class="performance-header">
+                    <h3>Başarılarımız</h3>
+                    <p>Başarı Oranı</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto text-center">
+                    <i class="fa-solid fa-check performance_icon"></i>
+                    <span data-toggle="counter-up" class="count">+250</span>
+                    <p class="text-center">Çalışma Saati</p>
+                    <p>Lorem nobis? lorem*40</p>
+                </div>
+            </div>
+        </section>
+        <!-- end section Başarılar -->
+
+        <!-- start section yeni haberler -->
+        <section id="newspaper" class="wow fadeIn">
+        </section>
+        <!-- end section yeni haberler  -->
+
+        <!-- start section blog -->
+        <section id="blog" class="wow fadeIn">
+        </section>
+        <!-- end section blog -->
+
 
     </main>
     <!-- main end -->
@@ -244,7 +291,7 @@
         <section id="footer_contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-lg-3">
+                    <div class="col-md-3">
                         <h3 class="text-uppercase" style="margin-left:2.5rem">Contact</h3>
 
                         <!-- fa-sm fa-lg fa-xl fa-2xl -->
@@ -256,7 +303,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-3 col-lg-3">
+                    <div class="col-md-3">
                         <h3 class="text-uppercase" style="margin-left:2.5rem">Company INC</h3>
                         <p class="line-clamp8">Company Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Quis
@@ -267,7 +314,7 @@
                             perspiciatis consectetur provident numquam fugiat, excepturi temporibus quasi, molestias
                             unde voluptate animi ab quisquam aperiam vitae maxime magni!</p>
                     </div>
-                    <div class="col-md col-lg-6">
+                    <div class="col-md-6">
                         <h3 class="text-uppercase">Email</h3>
                         <form action="#" id="form_email">
                             <input type="text" class="form-control mb-2" placeholder="Konu" required />
@@ -281,12 +328,14 @@
                 </div>
             </div>
         </section>
+
+        <section class="text-center bg-dark text-white fixed-bottom44" id="footer_copy_right">
+            <div class="container-fluid">
+                2021-2022 &copy; Bütün haklar Saklıdır. <a href="#">Design and codes By Hamit Mızrak</a>
+            </div>
+        </section>
     </footer>
-    <section class="text-center bg-dark text-white fixed-bottom44" id="footer_copy_right">
-        <div class="container-fluid">
-            2021-2022 &copy; Bütün haklar Saklıdır. <a href="#">Design and codes By Hamit Mızrak</a>
-        </div>
-    </section>
+
     <!-- footer end -->
 
     <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>

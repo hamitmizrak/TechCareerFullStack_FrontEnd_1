@@ -31,6 +31,7 @@ body {
     /* font-size: 2rem; */
     /*10*2=20px*/
     background-color: var(--template-bg);
+    overflow-x: hidden
 }
 
 a {
@@ -116,18 +117,16 @@ img:hover {
 /* ##################################################### */
 /* ### NAVBAR FIRST ###*/
 #navbar_first {
-    background-color: black!important;
+    background-color:rgba(0,0,0,1)!important;
     color: white;
     max-height: 3rem;
-    position:sticky;
-    top: 0;
+    opacity: 0.9;
 }
 
 #navbar_first_left ul li, #navbar_first_right button {
     display: inline-block;
     padding-top:1rem;
 }
-
 
 /* ### NAVBAR SECOND ###*/
 #navbar_second {
@@ -175,9 +174,31 @@ header h1,h4{
     cursor: pointer;
 }
 
+/* ### BAŞARILARIMIZ ###*/
+#performance{
+    background-color: #0B5ED7;
+    color:white;
+    padding:4rem 0;
+}
+
+.performance-header h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.performance-header p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.performance_icon{
+    font-size: 4rem;
+    display: block;
+}
+
 /* ##################################################### */
 /* ### FOOTER###*/
-footer {
+#footer_contact {
     height: 20rem;
     width: auto;
     background-color: black;
