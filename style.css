@@ -126,7 +126,6 @@ img:hover {
     -webkit-box-orient: vertical;
 }
 
-
 /* ##################################################### */
 /* ### NAVBAR FIRST ###*/
 #navbar_first {
@@ -289,7 +288,6 @@ h4 {
 /* ### BLOG ###*/
 #blog {
     position: relative;
-    height: 80rem;
 }
 
 #blog::before {
@@ -329,7 +327,7 @@ h4 {
 
 /* ##################################################### */
 /* ### FOOTER###*/
-#footer_contact {
+footer {
     height: 20rem;
     width: auto;
     background-color: black;
@@ -374,6 +372,12 @@ h4 {
     #about {
         height: 50rem;
     }
+
+    footer .col-md-3{
+        display: block;
+    }
+
+   
 }
 
 /* 768<=X<=??? */
@@ -383,5 +387,4 @@ h4 {
     #about {
         height: 35rem;
     }
-
 }
