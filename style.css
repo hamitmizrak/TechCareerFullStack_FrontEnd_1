@@ -163,7 +163,7 @@ header h1,h4{
 
 /* ### ÇALIŞMALARIMIZ ###*/
 #studies{
-    margin:4rem 0px;
+    padding:10rem;
 }
 .studies_icon{
     font-size: 6rem;
@@ -178,7 +178,7 @@ header h1,h4{
 #performance{
     background-color: #0B5ED7;
     color:white;
-    padding:4rem 0;
+    padding:10rem 0;
 }
 
 .performance-header h3{
@@ -189,11 +189,17 @@ header h1,h4{
 .performance-header p{
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 4rem;
 }
 
 .performance_icon{
     font-size: 4rem;
     display: block;
+}
+
+#performance .counter{
+font-size: 3rem;
+font-weight: bold;
 }
 
 /* ##################################################### */

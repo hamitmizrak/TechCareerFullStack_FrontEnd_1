@@ -6,27 +6,15 @@ Project Name: Blog Page
 -Description: This is project blog Business, my project
 */
 
-// $('body').scrollspy({ target: '#navbar_second' })
-
-// COUNTER
-// $(function () {
-//     $('[data-toggle="counter-up"]').counterUp({
-//         delay: 10,
-//         time: 1000
-//     });
-// });
-
-
+// ### COUNTER JS ###
+// Counter JS
 // $(document).ready(function() {
-
 //     var counters = $(".count");
 //     var countersQuantity = counters.length;
 //     var counter = [];
-  
 //     for (i = 0; i < countersQuantity; i++) {
 //       counter[i] = parseInt(counters[i].innerHTML);
 //     }
-  
 //     var count = function(start, value, id) {
 //       var localStart = start;
 //       setInterval(function() {
@@ -42,6 +30,17 @@ Project Name: Blog Page
 //     }
 //   });
 
-// const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-//     target: '#navbar_second'
-//   })
+// ### COUNTER JQUERY ###
+//  <span class="counter" data-counter="250"></span>
+// each: döngü için this:bu, objeyi işaretleme prop:objeye nesne ekleme
+$('.counter').each(function(){
+    $(this).prop('counter',0).animate({
+        counter: $(this).data('counter')
+    },{
+        duration: 4000,
+        easing: 'swing',
+        step:(step)=>{
+            $(this).text(Math.ceil(step));
+        }
+    }); //end animate
+});

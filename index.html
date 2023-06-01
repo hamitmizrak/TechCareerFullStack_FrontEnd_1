@@ -168,7 +168,7 @@
                         <a class="nav-link" href="#performance">Başarılar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#newspaper">Yeni Haberler</a>
+                        <a class="nav-link" href="#newspaper">Haberler</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#blog" id="dropdownId" data-bs-toggle="dropdown"
@@ -264,9 +264,20 @@
             <div class="row ">
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto text-center">
                     <i class="fa-solid fa-check performance_icon"></i>
-                    <span data-toggle="counter-up" class="count">+250</span>
+                    <span class="counter" data-counter="250"></span>
                     <p class="text-center">Çalışma Saati</p>
-                    <p>Lorem nobis? lorem*40</p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto text-center">
+                    <i class="fa-solid fa-person-chalkboard performance_icon"></i>
+                    <span class="counter" data-counter="15"></span>
+                    <p class="text-center">Ekip sayısı</p>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto text-center">
+                    <i class="fa-brands fa-intercom performance_icon"></i>
+                    <span class="counter" data-counter="110"></span>
+                    <p class="text-center">Müşteri Sayısı</p>
                 </div>
             </div>
         </section>
@@ -338,16 +349,18 @@
 
     <!-- footer end -->
 
+    <!-- backtop -->
     <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
 
-
     <!-- ends codes -->
-    <!-- Counter JS -->
-    <!-- Waypoints JavaScript Libraries -->
-    <script src="./experiences/waypoints/waypoints.min.js"></script>
-    <!-- Counterup JavaScript Libraries -->
-    <script src="./experiences/counterup/counterup.min.js"></script>
 
+    <!-- Counterup JavaScript Libraries -->
+    <!-- 
+        <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <script src="./experiences/counterup/counterup.min.js"></script> 
+    -->
+
+    <!-- for Bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
