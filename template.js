@@ -80,7 +80,9 @@ nowDate()
 // Hide()
 // 1.YOL
 let footer_date_hide = () => {
-    setInterval(()=>{
+    // setInterval : Sonsuz Döngüde çalışır. (Süreklilik yapılarında kullanmak. özellikle services yapılarında)
+    // setTimeout  : Tek bir döngüde çalışır.
+    setTimeout(()=>{
         $("#footer_date").hide();
     },2000)
     //window.alert("Tarih Kayboldu")
