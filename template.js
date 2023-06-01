@@ -61,3 +61,7 @@ $('.counter').each(function () {
     }); //end animate
 });
 
+
+
+// ### FOOTER JQUERY ###
+//date
