@@ -21,6 +21,9 @@ let darkMode=()=>{
     window.document.body.classList.toggle("dark_mode");
 }
 
+// ### LocalStorage Login
+
+
 
 // ### COUNTER JS ###
 // Counter JS
@@ -65,3 +68,13 @@ $('.counter').each(function () {
 
 // ### FOOTER JQUERY ###
 //date
+let nowDate=()=>{
+    // JS DOM
+let dateSpan= window.document.getElementById("footer_date");
+dateSpan.innerHTML=new Date().getFullYear();
+}
+nowDate()
+
+// şimdiki zamana 2 kere tıkladığımda şimdiki zamanı göstermesin jQuery yapalım.
+// jQuery DOM
+// Hide()
