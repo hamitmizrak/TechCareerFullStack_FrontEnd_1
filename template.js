@@ -15,6 +15,12 @@ $(document).ready(function () {
     });
 });
 
+// ### DARK MODE ###
+let darkMode=()=>{
+    //alert("çalıştı");
+    window.document.body.classList.toggle("dark_mode");
+}
+
 
 // ### COUNTER JS ###
 // Counter JS

@@ -136,9 +136,17 @@ img:hover {
     opacity: 1;
 }
 
+/* ### LOGO ### */
 #logo_id {
    border-radius: 50% 50%;
    width: 5.5rem;
+}
+
+/* ### DARK MODE*/
+.dark_mode{
+    background-color: black!important;
+    color: white!important;
+    /* arka taraf blur olur. */
 }
 
 /* ##################################################### */
