@@ -168,6 +168,8 @@ img:hover {
 #tags:focus{
     width: 25rem;
     transition: width 2.55s;
+    -webkit-transition: width 2.55s; /*chrome,*/
+    -o-transition: width 2.55s; /*opera,*/
     background-color:black ;
     color:#fff;
 }
