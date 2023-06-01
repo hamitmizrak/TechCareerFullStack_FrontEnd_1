@@ -78,3 +78,12 @@ nowDate()
 // şimdiki zamana 2 kere tıkladığımda şimdiki zamanı göstermesin jQuery yapalım.
 // jQuery DOM
 // Hide()
+// 1.YOL
+// let footer_date_hide=()=>{
+//   $("#footer_date").hide();
+//   window.alert("Tarih Kayboldu")
+// }
+// 2.YOL
+$("#footer_date").on("dblclick",function(){
+    $("#footer_date").hide();
+})
