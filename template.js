@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 // ### DARK MODE ###
-let darkMode=()=>{
+let darkMode = () => {
     //alert("çalıştı");
     window.document.body.classList.toggle("dark_mode");
 }
@@ -68,10 +68,10 @@ $('.counter').each(function () {
 
 // ### FOOTER JQUERY ###
 //date
-let nowDate=()=>{
+let nowDate = () => {
     // JS DOM
-let dateSpan= window.document.getElementById("footer_date");
-dateSpan.innerHTML=new Date().getFullYear();
+    let dateSpan = window.document.getElementById("footer_date");
+    dateSpan.innerHTML = new Date().getFullYear();
 }
 nowDate()
 
@@ -79,11 +79,20 @@ nowDate()
 // jQuery DOM
 // Hide()
 // 1.YOL
-// let footer_date_hide=()=>{
-//   $("#footer_date").hide();
-//   window.alert("Tarih Kayboldu")
-// }
+let footer_date_hide = () => {
+    setInterval(()=>{
+        $("#footer_date").hide();
+    },2000)
+    //window.alert("Tarih Kayboldu")
+}
+// Hemen Kaybolmasın 2 saniye sonra kayboldun (setInterval(callBackFnc,timer))
+//setInterval(footer_date_hide,2000)
+
+// Hemen Kaybolmasın 2 saniye sonra kayboldun (setInterval(callBackFnc,timer))
+
 // 2.YOL
-$("#footer_date").on("dblclick",function(){
-    $("#footer_date").hide();
-})
+// $("#footer_date").on("dblclick",function(){
+//     $("#footer_date").hide();
+// })
+
+
