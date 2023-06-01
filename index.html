@@ -68,23 +68,29 @@
     <nav id="navbar_first">
         <div class="container">
             <div class="row">
-                <div id="navbar_first_left" class="col-9">
+                <div id="navbar_first_left" class="col-8">
                     <ul>
-                        <li> <a href="#" target="_blank"><i
-                                    class="fa-brands fa-linkedin text-primary icon_size"></i></a> </li>
-                        <li> <a href="#" target="_blank"><i class="fa-brands fa-youtube text-danger icon_size"></i></a>
+                       
+                        <li>  <button class="btn btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offCanvasRegisterId"><i class="fa-solid fa-user-secret"></i></button>
                         </li>
-                        <li> <a href="#" target="_blank"><i class="fa-solid fa-blog text-warning icon_size"></i></a>
+                        <li>  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#loginModalId"><i class="fa-solid fa-circle-user"></i></button>
+                        </li>
+                        <li>    <button class="btn btn-sm btn-primary" onclick="darkMode()"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                        </li>
+                        <li><img src="./img/flag/en.png" class="flag" alt="" />
+                        </li>
+                        <li> <img src="./img/flag/tr.png" class="flag" alt=""/>
                         </li>
                     </ul>
                 </div>
-                <div id="navbar_first_right" class="col-3">
-                    <button class="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offCanvasRegisterId"><i class="fa-solid fa-user-secret"></i></button>
-                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#loginModalId"><i class="fa-solid fa-circle-user"></i></button>
-                    <button class="btn btn-sm"><img src="./img/flag/en.png"  alt="" style="max-width: 2.5rem!important;"/></button>
-                    <button class="btn btn-sm"><img src="./img/flag/tr.png"  alt="" style="max-width: 2.5rem!important;"/></button>
-                    <button class="btn btn-sm" onclick="darkMode()"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                </div>
+                <div id="navbar_first_right" class="col-4 mx-auto">
+                    <ul>
+                        <li> <a href="#" target="_blank"><i  class="fa-brands fa-linkedin text-primary icon_size"></i></a> </li>
+                        <li> <a href="#" target="_blank"><i class="fa-brands fa-youtube text-danger icon_size"></i></a> </li>
+                        <li> <a href="#" target="_blank"><i class="fa-solid fa-blog text-warning icon_size"></i></a> </li>
+
+                    </ul>
+               </div>
             </div>
         </div>
     </nav>
@@ -597,7 +603,6 @@
             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=985&amp;height=551&amp;hl=en&amp;q=%20malatya+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </section>
         <!-- end section contact -->
-
     </main>
     <!-- main end -->
 
@@ -606,7 +611,7 @@
         <section id="footer_contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                         <h3 class="text-uppercase">Contact</h3>
                         <!-- fa-sm fa-lg fa-xl fa-2xl -->
                         <div class="d-grid gap-4">
@@ -616,7 +621,7 @@
                             <p> <i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                         <h3 class="text-uppercase">Company INC</h3>
                         <p class="line-clamp8">Company Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Quis
@@ -627,7 +632,7 @@
                             perspiciatis consectetur provident numquam fugiat, excepturi temporibus quasi, molestias
                             unde voluptate animi ab quisquam aperiam vitae maxime magni!</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <h3 class="text-uppercase">Email</h3>
                         <form action="#" id="form_email">
                             <input type="text" class="form-control mb-2" placeholder="Konu" required />
@@ -641,22 +646,22 @@
                 </div>
             </div>
         </section>
-
-        <section class="text-center bg-dark text-white fixed-bottom44" id="footer_copy_right">
-            <div class="container-fluid">
-                2021- <span id="footer_date" ondblclick="footer_date_hide()"></span> &copy; Bütün haklar Saklıdır. <a href="#">Design and codes By Hamit Mızrak</a>
-            </div>
-        </section>
     </footer>
+
+    <section class="text-center bg-dark text-white fixed-bottom44" id="footer_copy_right">
+        <div class="container-fluid">
+            2021- <span id="footer_date" ondblclick="footer_date_hide()"></span> &copy; Bütün haklar Saklıdır. <a href="#">Design and codes By Hamit Mızrak</a>
+        </div>
+    </section>
 
     <!-- footer end -->
     <!-- backtop -->
-    <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
+    <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up" style="margin-left: -.7rem;"></i></a>
 
     <!-- ends codes -->
     <!-- Counterup JavaScript Libraries -->
     <!-- 
-        <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <script src="./experiences/waypoints/waypoints.min.js"></script>
     <script src="./experiences/counterup/counterup.min.js"></script> 
     -->
 

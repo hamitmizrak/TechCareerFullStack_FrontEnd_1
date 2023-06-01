@@ -19,6 +19,9 @@ $(document).ready(function () {
 let darkMode = () => {
     //alert("çalıştı");
     window.document.body.classList.toggle("dark_mode");
+  let performance=  window.document.getElementById("performance");
+  performance.style.backgroundColor="black";
+  performance.style.color="white";
 }
 
 // ### Login Validation
