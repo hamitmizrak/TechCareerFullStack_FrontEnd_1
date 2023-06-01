@@ -75,15 +75,15 @@ img:hover {
     clear: both;
 }
 
-.icon_size{
+.icon_size {
     font-size: 1.5rem;
 }
 
-.flag{
+.flag {
     width: 2rem;
 }
 
-.my_heading{
+.my_heading {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -133,20 +133,21 @@ img:hover {
 /* ##################################################### */
 /* ### NAVBAR FIRST ###*/
 #navbar_first {
-    background-color:rgba(0,0,0,1)!important;
+    background-color: rgba(0, 0, 0, 1) !important;
     color: white;
     max-height: 3rem;
     opacity: 0.9;
 }
 
-#navbar_first_left ul li, #navbar_first_right button {
+#navbar_first_left ul li,
+#navbar_first_right button {
     display: inline-block;
-    padding-top:1rem;
+    padding-top: 1rem;
 }
 
 /* ### NAVBAR SECOND ###*/
 #navbar_second {
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 1;
     opacity: 1;
@@ -154,31 +155,32 @@ img:hover {
 
 /* ### LOGO ### */
 #logo_id {
-   border-radius: 50% 50%;
-   width: 5.5rem;
+    border-radius: 50% 50%;
+    width: 5.5rem;
 }
 
 /* ### DARK MODE*/
-.dark_mode{
-    background-color: black!important;
-    color: white!important;
+.dark_mode {
+    background-color: black !important;
+    color: white !important;
     /* arka taraf blur olur. */
 }
 
 /* ##################################################### */
 /* ### HEADER###*/
-header{
+header {
     background-image: url('./img/header.jpg');
     background-size: cover;
     background-position: 50% 50%;
     /* height: 50rem; */
     height: 80vh;
-    padding-top:15rem;
+    padding-top: 15rem;
     z-index: -1;
 }
 
-header h1,h4{
-    color:white;
+header h1,
+h4 {
+    color: white;
     text-transform: uppercase;
 }
 
@@ -186,49 +188,66 @@ header h1,h4{
 /* ### MAIN###*/
 
 /* ### ÇALIŞMALARIMIZ ###*/
-#studies{
-    padding:10rem;
+#studies {
+    padding-top: 5rem;
+    height: 50rem;
 }
-.studies_icon{
+
+.studies_icon {
     font-size: 6rem;
-    margin-bottom:1rem;
-    box-shadow: 0.5px .5px .3px 1px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+    box-shadow: 0.5px .5px .3px 1px rgba(0, 0, 0, 0.4);
 }
-.studies_icon:hover{
+
+.studies_icon:hover {
     cursor: pointer;
 }
 
 /* ### BAŞARILARIMIZ ###*/
-#performance{
+#performance {
     background-color: #0B5ED7;
-    color:white;
-    padding:10rem 0;
+    color: white;
+    padding-top: 5rem;
+    height: 50rem;
 }
 
-.performance-header h3{
+.performance-header h3 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.performance-header p{
+.performance-header p {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 4rem;
 }
 
-.performance_icon{
+.performance_icon {
     font-size: 4rem;
     display: block;
 }
 
-#performance .counter{
-font-size: 2.2rem;
-font-weight: bold;
+#performance .counter {
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 /* ### HABERLER ###*/
-.newspaper{
+#newspaper {
+    padding-top: 5rem;
+    height: 50rem;
+}
 
+/* ### HAKKIMIZDA ###*/
+#about {
+    padding-top: 5rem;
+    height: 50rem;
+    color: white;
+    background-image: url("./img/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: fixed;
 }
 
 /* ##################################################### */
@@ -238,10 +257,10 @@ font-weight: bold;
     width: auto;
     background-color: black;
     color: white;
-    padding:1rem
+    padding: 1rem
 }
 
-#footer_copy_right{
+#footer_copy_right {
     height: 5rem;
     padding: 2rem;
 }
