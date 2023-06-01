@@ -31,7 +31,7 @@ body {
     /* font-size: 2rem; */
     /*10*2=20px*/
     background-color: var(--template-bg);
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 a {
@@ -83,6 +83,15 @@ img:hover {
     width: 2rem;
 }
 
+.my_heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 2s all;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
 /* ##################################################### */
 /* ### LINE CLAMP ###*/
 .line-clamp4 {
@@ -110,6 +119,13 @@ img:hover {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp15 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 15;
     -webkit-box-orient: vertical;
 }
 
@@ -208,6 +224,11 @@ header h1,h4{
 #performance .counter{
 font-size: 2.2rem;
 font-weight: bold;
+}
+
+/* ### HABERLER ###*/
+.newspaper{
+
 }
 
 /* ##################################################### */
