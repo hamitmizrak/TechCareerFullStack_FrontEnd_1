@@ -79,14 +79,11 @@
                     </ul>
                 </div>
                 <div id="navbar_first_right" class="col-3">
-                    <button class="btn  btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offCanvasRegisterId"><i
-                            style="color:#6F9EE0;" class="fa-solid fa-user-secret icon_size"></i></button>
-                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#loginModalId"><i
-                            style="color:#6F9EE0;" class="fa-solid fa-circle-user icon_size"></i></button>
-                    <button class="btn btn-sm "><img src="./img/flag/en.png" class="flag" alt="" /></button>
-                    <button class="btn btn-sm "><img src="./img/flag/tr.png" class="flag" alt="" /></button>
-                    <button class="btn btn-sm btn-warning" onclick="darkMode()"><i
-                            class="fa-solid fa-circle-half-stroke"></i></button>
+                    <button class="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offCanvasRegisterId"><i class="fa-solid fa-user-secret"></i></button>
+                    <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#loginModalId"><i class="fa-solid fa-circle-user"></i></button>
+                    <button class="btn btn-sm"><img src="./img/flag/en.png"  alt="" style="max-width: 2.5rem!important;"/></button>
+                    <button class="btn btn-sm"><img src="./img/flag/tr.png"  alt="" style="max-width: 2.5rem!important;"/></button>
+                    <button class="btn btn-sm" onclick="darkMode()"><i class="fa-solid fa-circle-half-stroke"></i></button>
                 </div>
             </div>
         </div>
@@ -184,7 +181,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">İletişim</a>
+                        <a class="nav-link" href="#maps">İletişim</a>
                     </li>
 
                 </ul>
@@ -592,8 +589,13 @@
         </section>
         <!-- end section blog -->
 
-        <!-- start section contact -->
-        <section id="contact" class="wow fadeIn"></section>
+        <!-- start section maos -->
+        <section id="maps" class="wow fadeIn">
+            <h3 class="my_heading">Map</h3>
+            <p class="display-6 text-center">Yeni Bilgileri Öğrenin</p>
+            <!-- https://www.embedmap.net/ -->
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=985&amp;height=551&amp;hl=en&amp;q=%20malatya+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </section>
         <!-- end section contact -->
 
     </main>
@@ -650,12 +652,10 @@
     </footer>
 
     <!-- footer end -->
-
     <!-- backtop -->
     <a id="back_top" href="#no_script" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- ends codes -->
-
     <!-- Counterup JavaScript Libraries -->
     <!-- 
         <script src="./experiences/waypoints/waypoints.min.js"></script>
@@ -674,5 +674,4 @@
     <!-- external js -->
     <script src="./template.js"></script>
 </body>
-
 </html>
