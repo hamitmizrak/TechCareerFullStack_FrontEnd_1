@@ -21,9 +21,9 @@ let darkMode = () => {
     window.document.body.classList.toggle("dark_mode");
 }
 
+// ### Login Validation
+
 // ### LocalStorage Login
-
-
 
 // ### COUNTER JS ###
 // Counter JS
@@ -94,5 +94,25 @@ let footer_date_hide = () => {
 // $("#footer_date").on("dblclick",function(){
 //     $("#footer_date").hide();
 // })
+
+// BackTop
+// jQuery scroll
+// 1.YOL
+/*
+$(window).scroll(function(){
+    if($(this).scrollTop()>80){
+        $('#back_top').fadeIn('slow');
+    }else{
+        $('#back_top').fadeOut('slow');
+    }
+}); //end window
+*/
+
+// 2.YOL
+$(window).scroll(function(){
+    ($(this).scrollTop()>80) ? $('#back_top').fadeIn('slow') : $('#back_top').fadeOut('slow');
+}); //end window
+
+// CSS MediaQuery yazalım
 
 
