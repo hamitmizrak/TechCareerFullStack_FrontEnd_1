@@ -6,6 +6,16 @@ Project Name: Blog Page
 -Description: This is project blog Business, my project
 */
 
+// ### SEARCH AUTOCOMPLETE JS ###
+//ready: sen hazırsan bende hazırım
+$(document).ready(function () {
+    const searchData = ['Adana', "Ankara", "Balıkesir", "Diyarbakır", "Elazığ", "Hatay", "İstanbul", "Malatya"];
+    $("#tags").autocomplete({
+        source: searchData
+    });
+});
+
+
 // ### COUNTER JS ###
 // Counter JS
 // $(document).ready(function() {
@@ -24,7 +34,7 @@ Project Name: Blog Page
 //         }
 //       }, 40);
 //     }
-  
+
 //     for (j = 0; j < countersQuantity; j++) {
 //       count(0, counter[j], j);
 //     }
@@ -33,14 +43,15 @@ Project Name: Blog Page
 // ### COUNTER JQUERY ###
 //  <span class="counter" data-counter="250"></span>
 // each: döngü için this:bu, objeyi işaretleme prop:objeye nesne ekleme
-$('.counter').each(function(){
-    $(this).prop('counter',0).animate({
+$('.counter').each(function () {
+    $(this).prop('counter', 0).animate({
         counter: $(this).data('counter')
-    },{
+    }, {
         duration: 4000,
         easing: 'swing',
-        step:(step)=>{
+        step: (step) => {
             $(this).text(Math.ceil(step));
         }
     }); //end animate
 });
+
