@@ -143,7 +143,6 @@ img:hover {
 #navbar_first_left ul li {
     display: inline-block;
     padding-top: 1rem;
-color:red;
 }
 
 #navbar_first_right button {
@@ -286,7 +285,8 @@ h4 {
     background-repeat: no-repeat;
     background-color: transparent;
     background-attachment: fixed;
-    height: 45rem;
+    height: 60rem;
+    padding-bottom: 40rem;
 }
 
 #about>h3,
