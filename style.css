@@ -186,12 +186,17 @@ h4 {
 
 /* ##################################################### */
 /* ### MAIN###*/
+/* Common Property*/
+#studies, #performance, #about{
+    padding-top: 5rem;
+    height: 35rem;
+}
 
 /* ### ÇALIŞMALARIMIZ ###*/
-#studies {
+/* #studies {
     padding-top: 5rem;
     height: 50rem;
-}
+} */
 
 .studies_icon {
     font-size: 6rem;
@@ -207,8 +212,6 @@ h4 {
 #performance {
     background-color: #0B5ED7;
     color: white;
-    padding-top: 5rem;
-    height: 50rem;
 }
 
 .performance-header h3 {
@@ -233,21 +236,25 @@ h4 {
 }
 
 /* ### HABERLER ###*/
-#newspaper {
-    padding-top: 5rem;
-    height: 50rem;
-}
+ #newspaper {
+    height: 45rem!important;
+} 
 
 /* ### HAKKIMIZDA ###*/
 #about {
-    padding-top: 5rem;
-    height: 50rem;
     color: white;
     background-image: url("./img/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
     background-attachment: fixed;
+}
+
+#about > h3, #about p{
+    background-color: rgba(0,0,0,.2);
+    color:white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* ##################################################### */
