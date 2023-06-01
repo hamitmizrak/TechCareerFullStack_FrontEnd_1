@@ -136,21 +136,21 @@ img:hover {
     opacity: 0.9;
 }
 
-#navbar_first_left ul li{
+#navbar_first_left ul li {
     display: inline-block;
     padding-top: 1rem;
 }
 
-#navbar_first_right button{
-   color: #0B5ED7;
-   display: inline-block;
-   width: 2rem;
+#navbar_first_right button {
+    color: #0B5ED7;
+    display: inline-block;
+    width: 2rem;
 }
 
 
-#navbar_first_right img{
+#navbar_first_right img {
     border-radius: 50% 50%;
-    max-width: 200%!important;
+    max-width: 200% !important;
 }
 
 /* ### NAVBAR SECOND ###*/
@@ -168,18 +168,20 @@ img:hover {
 }
 
 /* ### SEARCH FOCUS ### */
-#tags{
+#tags {
     background-color: #fff;
-    color:black;
+    color: black;
 }
 
-#tags:focus{
+#tags:focus {
     width: 25rem;
     transition: width 2.55s;
-    -webkit-transition: width 2.55s; /*chrome,*/
-    -o-transition: width 2.55s; /*opera,*/
-    background-color:black ;
-    color:#fff;
+    -webkit-transition: width 2.55s;
+    /*chrome,*/
+    -o-transition: width 2.55s;
+    /*opera,*/
+    background-color: black;
+    color: #fff;
 }
 
 /* ### DARK MODE*/
@@ -320,9 +322,9 @@ h4 {
 }
 
 /* ### MAPS###*/
-#maps iframe{
+#maps iframe {
     width: 100%;
-    height: 40rem!important;
+    height: 40rem !important;
 }
 
 /* ##################################################### */
@@ -358,4 +360,28 @@ h4 {
     color: #0B5ED7;
     opacity: 0.9;
     transition: all 3s;
+}
+
+/* ##################################################### */
+/* ### MEDIA QUERY###*/
+/* 1<=X<=767 */
+@media screen and (min-width:1px) {
+    #studies {
+        height: 70rem;
+    }
+
+    #performance,
+    #about {
+        height: 50rem;
+    }
+}
+
+/* 768<=X<=??? */
+@media screen and (min-width:768px) {
+    #studies,
+    #performance,
+    #about {
+        height: 35rem;
+    }
+
 }
