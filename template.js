@@ -20,13 +20,42 @@ let darkMode = () => {
     //alert("çalıştı");
     window.document.body.classList.toggle("dark_mode");
   let performance=  window.document.getElementById("performance");
+  // CSS Dom
   performance.style.backgroundColor="black";
   performance.style.color="white";
 }
 
-
 // Html5 CSs3 JS jQuery Responsive React -+ES5
 // ### Login Validation
+$(function(event){
+    // Browser sen dur ben biliyorum ne yapacağımı.
+    //event.preventDefault();
+    $("#loginSubmit").click(function(){
+        let email,passwd;
+        // $.trim() 
+        email=jQuery.trim($("#email_data").val());
+        passwd=jQuery.trim($("#passwd_data").val());
+        // alert("email: "+email+" şifre: "+passwd);
+        // interpolation
+        // alert(`email: ${email} şifre: ${passwd}`);
+
+        const storageEmail=localStorage.setItem("email",email);
+        const storagePassword=localStorage.setItem("password",passwd);
+        console.log(localStorage)
+
+        const getEmail=localStorage.getItem("email");
+        console.log(getEmail)
+
+        if(email==""){
+            $("#email_data_validation").html("Email Boş geçilemez...");
+        }
+
+        if(passwd==""){
+            $("#passwd_data_validation").html("Şifre Boş geçilemez...");
+        }
+    }); //end click
+
+}); // end login function
 
 // ### LocalStorage Login
 
@@ -71,7 +100,6 @@ $(window).scroll(function(){
         }); //end animate
     }) : "";
 }); //end window
-
 
 // ### FOOTER JQUERY ###
 //date
