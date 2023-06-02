@@ -108,17 +108,31 @@
                 <!-- İmportant: password,name,user,username bunları değiştirin -->
                 <div class="modal-body">
                     <form action="#" method="get" autocomplete="on">
+                        <!-- Email -->
                         <div class="form-group mb-3">
                             <label for="email_data">Email</label>
-                            <input type="email" id="email_data" name="email_data" class="form-control"
-                                placeholder="Emailinizi yazınız..." required autofocus />
-                            <label class="text-danger">email not found</label>
+                            <input 
+                            type="email" 
+                            id="email_data" 
+                            name="email_data" 
+                            class="form-control"
+                            placeholder="Emailinizi yazınız..." 
+                            required 
+                            autofocus />
+                            <label class="text-danger" id="email_data_validation"></label>
                         </div>
+
+                        <!-- Password -->
                         <div class="form-group mb-3">
                             <label for="password_data">Şifre</label>
-                            <input type="password" id="passwd_data" name="passwd_data" class="form-control"
-                                placeholder="Şifrenizi yazınız..." required />
-                            <label class="text-danger">email not found</label>
+                            <input 
+                            type="password" 
+                            id="passwd_data" 
+                            name="passwd_data" 
+                            class="form-control"
+                            placeholder="Şifrenizi yazınız..." 
+                            required />
+                        <label class="text-danger" id="passwd_data_validation"></label>
                         </div>
                         <div class="form-group mb-3">
                             <button type="reset" class="btn btn-danger">Temizle</button>

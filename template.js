@@ -24,6 +24,8 @@ let darkMode = () => {
   performance.style.color="white";
 }
 
+
+// Html5 CSs3 JS jQuery Responsive React -+ES5
 // ### Login Validation
 
 // ### LocalStorage Login
@@ -55,18 +57,20 @@ let darkMode = () => {
 // ### COUNTER JQUERY ###
 //  <span class="counter" data-counter="250"></span>
 // each: döngü için this:bu, objeyi işaretleme prop:objeye nesne ekleme
-$('.counter').each(function () {
-    $(this).prop('counter', 0).animate({
-        counter: $(this).data('counter')
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: (step) => {
-            $(this).text(Math.ceil(step));
-        }
-    }); //end animate
-});
-
+// scroll:200 olduğunda saymaya başlasın
+$(window).scroll(function(){
+    ($(this).scrollTop()>200) ? $('.counter').each(function () {
+        $(this).prop('counter', 0).animate({
+            counter: $(this).data('counter')
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: (step) => {
+                $(this).text(Math.ceil(step));
+            }
+        }); //end animate
+    }) : "";
+}); //end window
 
 
 // ### FOOTER JQUERY ###
